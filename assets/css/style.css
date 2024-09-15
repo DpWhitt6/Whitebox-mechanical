@@ -129,36 +129,30 @@ nav {
     #menu {
         font-size: 150%;
     }
+}
 
-    /* Media query: tablets and larger (768px and up) */
-    @media screen and (min-width: 768px) {
-            /*Header*/
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /*Header*/
     #company {
         font-size: 300%;
     }
+}
 
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
 
-    }
-
-    /* Large devices (laptops and desktops, 992px and up) */
-    @media screen and (min-width: 992px) {
-            /*Header*/
+    /*Header*/
     #company {
         font-size: 350%;
     }
-    #logo {
-        size: 150%;
-    }
-    .fa-solid{
-        size: 150%;
-    }
+}
 
-    }
+@media screen and (min-width: 1200px) {
 
-    @media screen and (min-width: 1200px) {
-            /*Header*/
+    /*Header*/
     #company {
         font-size: 400%;
     }
-
-    }
+}
