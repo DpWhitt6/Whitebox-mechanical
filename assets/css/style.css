@@ -18,13 +18,16 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: #48688d;
-    font-family: 'Rokkitt', sans-serif; /*TASK: Change fonts*/
+    font-family: 'Rokkitt', sans-serif;
+    /*TASK: Change fonts*/
 }
 
 h1,
 h2,
 h3 {
     font-family: 'Rokkitt', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bolder;
 }
 
 .hidden {
@@ -38,16 +41,15 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    height: 65px;
     box-shadow: 0 2px 2px #a0b1c1;
     display: flex;
     justify-content: space-between;
-} /*TASK: Review colors and adapt to suit clients color palate*/
+}
+
+/*TASK: Review colors and adapt to suit clients color palate*/
 
 #company {
-    font-size: 150%;
-    letter-spacing: 2px;
-    font-weight: bolder;
+    font-size: 165%;
     text-align: center;
 }
 
@@ -80,20 +82,21 @@ header a {
 }
 
 .active {
-    border-bottom: 1px solid #48688d; 
+    border-bottom: 1px solid #48688d;
 }
+
 .fa-solid {
-    width: 50px;
-    height: 50px;
-    padding-right: 50px;
+    width: 75%;
+    height: 75%;
     padding-bottom: 5px;
     padding-top: 0px;
 }
 
 /* Navbar styles with dropdown toggle */
-nav { /*TASK: move burger icon up to mimic the logo - currently looks off centered*/
+nav {
+    /*TASK: move burger icon up to mimic the logo - currently looks off centered*/
     position: absolute;
-    background-color:  #cfcccc; 
+    background-color: #cfcccc;
     width: 100%;
     left: 0px;
     padding: 0 1rem;
@@ -114,3 +117,48 @@ nav { /*TASK: move burger icon up to mimic the logo - currently looks off center
 .nav-toggle-label {
     font-size: 2rem;
 }
+
+/*media query: large or landscape phones (576px and up)*/
+@media screen and (min-width: 576px) {
+
+    /*Header*/
+    #company {
+        font-size: 225%;
+    }
+
+    #menu {
+        font-size: 150%;
+    }
+
+    /* Media query: tablets and larger (768px and up) */
+    @media screen and (min-width: 768px) {
+            /*Header*/
+    #company {
+        font-size: 300%;
+    }
+
+
+    }
+
+    /* Large devices (laptops and desktops, 992px and up) */
+    @media screen and (min-width: 992px) {
+            /*Header*/
+    #company {
+        font-size: 350%;
+    }
+    #logo {
+        size: 150%;
+    }
+    .fa-solid{
+        size: 150%;
+    }
+
+    }
+
+    @media screen and (min-width: 1200px) {
+            /*Header*/
+    #company {
+        font-size: 400%;
+    }
+
+    }
