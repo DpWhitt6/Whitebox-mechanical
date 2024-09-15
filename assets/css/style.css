@@ -16,13 +16,15 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: #3a3a3a;
+    color: #48688d;
     font-family: 'Lato', sans-serif; /*TASK: Change fonts*/
 }
 
 h1,
 h2,
-h3 {}
+h3 {
+
+}
 
 .hidden {
     display: none;
@@ -31,11 +33,11 @@ h3 {}
 /* Header */
 header {
     background-color: #ffffff;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
+    box-shadow: 0 2px 2px #a0b1c1;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -46,6 +48,13 @@ header a {
     color: inherit;
 }
 
+#badge{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    height: 80px;
+    width: 80px;
+}
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -57,17 +66,17 @@ header a {
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a; /*TASK: Color palate to be reviewed*/
+    border-bottom: 1px solid #48688d; 
 }
 
 /* Navbar styles with dropdown toggle */
-nav {
+nav { /*TASK: move burger icon up to mimic the logo - currently looks off centered*/
     position: absolute;
-    background-color: #ffffff; /*TASK: Color palate to be reviewed*/
+    background-color: #ffffff; 
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;/*TASK: Color palate to be reviewed*/
+    box-shadow: 0 2px 2px#48688d;
     display: none;
     top: 100%;
 }
