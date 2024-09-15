@@ -18,13 +18,13 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: #48688d;
-    font-family: 'Lato', sans-serif; /*TASK: Change fonts*/
+    font-family: 'Rokkitt', sans-serif; /*TASK: Change fonts*/
 }
 
 h1,
 h2,
 h3 {
-
+    font-family: 'Rokkitt', sans-serif;
 }
 
 .hidden {
@@ -33,49 +33,69 @@ h3 {
 
 /* Header */
 header {
-    background-color: #ffffff;
-    padding: 1rem 1rem;
+    background-color: #cfcccc;
+    padding: .5rem .5rem;
     position: fixed;
     z-index: 99;
     width: 100%;
+    height: 65px;
     box-shadow: 0 2px 2px #a0b1c1;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
 } /*TASK: Review colors and adapt to suit clients color palate*/
+
+#company {
+    font-size: 150%;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#logo {
+    display: flex;
+    order: -1;
+    width: 50px;
+    height: 50px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+}
 
 header a {
     text-decoration: none;
     color: inherit;
 }
 
-#badge{
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    height: 80px;
-    width: 80px;
-}
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
+    display: inline-block;
+    width: 100%;
 }
 
 #menu>li {
     margin-bottom: 1em;
+    text-align: center;
 }
 
 .active {
     border-bottom: 1px solid #48688d; 
 }
+.fa-solid {
+    width: 50px;
+    height: 50px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+}
 
 /* Navbar styles with dropdown toggle */
 nav { /*TASK: move burger icon up to mimic the logo - currently looks off centered*/
     position: absolute;
-    background-color: #ffffff; 
+    background-color:  #cfcccc; 
     width: 100%;
-    left: 0;
+    left: 0px;
     padding: 0 1rem;
     box-shadow: 0 2px 2px#48688d;
     display: none;
