@@ -120,14 +120,19 @@ main {
     /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
+    background: scroll;
+    background-image: url("../images/IMG_4273.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Hero section */
 #hero {
-    height: 600px;
+    height: 500px;
     width: 100%;
-    background: url("../images/IMG_7131.jpg") no-repeat center center/cover;
+    /*background: url("../images/IMG_7131.jpg") no-repeat center center/cover;*/
     position: relative;
+    
 }
 
 #cover-text {
@@ -143,6 +148,7 @@ main {
     padding-left: 10px;
 }
 
+
 #services {
     margin: auto;
     display: grid;
@@ -152,12 +158,10 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 50px 0px 25px 0px;
+    padding: 50px 90px 25px 90px;
 }
 
 #services div {
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
     font-size: larger;
     box-sizing: content-box;
