@@ -149,6 +149,7 @@ main {
 }
 
 
+
 #services {
     margin: auto;
     display: grid;
@@ -169,6 +170,10 @@ main {
     width: 180px;
     padding: 30px;
     border-radius: 25%;
+}
+
+.class {
+    
 }
 
 
