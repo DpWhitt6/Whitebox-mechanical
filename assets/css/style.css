@@ -145,43 +145,68 @@ main {
 
 #services {
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, auto);
+    /*stackoverflow https://stackoverflow.com/questions/8184958/add-space-between-html-elements-only-using-css*/
+    grid-gap: 20px;
     display: flex;
-    flex-direction: row;
-    align-content: space-evenly;
-    padding-top: 75px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 75px;
     flex-wrap: wrap;
+    flex-direction: row;
+    padding: 25px 0px 25px 75px;
 }
 
 #services div {
     text-align: center;
+    font-size: larger;
     box-sizing: content-box;
     height: 150px;
     width: 150px;
     padding: 30px;
-    border: 2px solid #48688d;
     border-radius: 25%;
-    
 }
 
 
 #design {
     order: 1;
+    background-color: #cfcccc;
+    border: 2px solid #48688d;
+    box-shadow: 5px 5px #48688d;
 }
 
 #install {
     order: 2;
+    background-color: #48688d;
+    border: 2px solid #cfcccc;
+    color:  #cfcccc;
+    box-shadow: 5px 5px #cfcccc;
 }
 
 
 #plumbing {
     order: 3;
+    background-color: #cfcccc;
+    border: 2px solid #48688d;
+    box-shadow: 5px 5px #48688d;
 }
 
 #consult {
     order: 4;
+    background-color: #48688d;
+    border: 2px solid #cfcccc;
+    color:  #cfcccc;
+    box-shadow: 5px 5px #cfcccc;
+}
+
+footer {
+    background-color: #48688d;
+}
+
+#address {
+    display: flex;
+    flex-wrap: wrap;
+    color: #cfcccc;
+    width: 35%;
+    padding-left: 15px;
 }
 
 /*media query: large or landscape phones (576px and up)*/
