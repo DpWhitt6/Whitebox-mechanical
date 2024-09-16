@@ -124,11 +124,12 @@ main {
     background-image: url("../images/IMG_4273.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    margin: auto;
 }
 
 /* Hero section */
 #hero {
-    height: 500px;
+    height: 450px;
     width: 100%;
     /*background: url("../images/IMG_7131.jpg") no-repeat center center/cover;*/
     position: relative;
@@ -137,12 +138,12 @@ main {
 
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
-    background-color: #a0b1c1;
+    background-color: #cfcccc;
     opacity: 0.8;
     font-size: 150%;
     position: absolute;
     bottom: 15px;
-    width: 80%;
+    width: 100%;
     min-height: 170px;
     padding-top: 40px;
     padding-left: 10px;
@@ -159,7 +160,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 50px 90px 25px 90px;
+    padding: 20px 70px 25px 70px;
 }
 
 #services div {
@@ -172,8 +173,14 @@ main {
     border-radius: 25%;
 }
 
-.class {
-    
+.services {
+    width: 100%;
+    text-align:start;
+    font-size: large;
+    color: #cfcccc;
+    padding: 20px 10px 20px 10px;
+    background-color: #48688d;
+    opacity: .9;
 }
 
 
@@ -210,6 +217,8 @@ main {
 
 footer {
     background-color: #48688d;
+    z-index: 99;
+    
 }
 
 #address {
