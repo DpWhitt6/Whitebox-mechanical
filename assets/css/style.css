@@ -144,7 +144,7 @@ main {
 }
 
 #services {
-    width: 100%;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, auto);
     /*stackoverflow https://stackoverflow.com/questions/8184958/add-space-between-html-elements-only-using-css*/
@@ -152,15 +152,17 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 25px 0px 25px 75px;
+    padding: 50px 0px 25px 0px;
 }
 
 #services div {
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     font-size: larger;
     box-sizing: content-box;
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
     padding: 30px;
     border-radius: 25%;
 }
@@ -177,7 +179,7 @@ main {
     order: 2;
     background-color: #48688d;
     border: 2px solid #cfcccc;
-    color:  #cfcccc;
+    color: #cfcccc;
     box-shadow: 5px 5px #cfcccc;
 }
 
@@ -193,7 +195,7 @@ main {
     order: 4;
     background-color: #48688d;
     border: 2px solid #cfcccc;
-    color:  #cfcccc;
+    color: #cfcccc;
     box-shadow: 5px 5px #cfcccc;
 }
 
@@ -202,8 +204,6 @@ footer {
 }
 
 #address {
-    display: flex;
-    flex-wrap: wrap;
     color: #cfcccc;
     width: 35%;
     padding-left: 15px;
