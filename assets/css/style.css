@@ -147,48 +147,41 @@ main {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-content: space-around;
+    align-content: space-evenly;
     padding-top: 75px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 75px;
+    flex-wrap: wrap;
+}
 
+#services div {
+    text-align: center;
+    box-sizing: content-box;
+    height: 150px;
+    width: 150px;
+    padding: 30px;
+    border: 2px solid #48688d;
+    border-radius: 25%;
+    
 }
 
 
 #design {
     order: 1;
-    text-align: center;
-    height: 200px;
-    width: 200px;
-    border: 2px solid #48688d;
-    border-radius: 25%;
 }
 
 #install {
     order: 2;
-    text-align: center;
-    height: 200px;
-    width: 200px;
-    border: 2px solid #48688d;
-    border-radius: 25%;
 }
 
 
 #plumbing {
     order: 3;
-    text-align: center;
-    height: 200px;
-    width: 200px;
-    border: 2px solid #48688d;
-    border-radius: 25%;
 }
 
 #consult {
     order: 4;
-    text-align: center;
-    height: 200px;
-    width: 200px;
-    border: 2px solid #48688d;
-    border-radius: 25%;
 }
 
 /*media query: large or landscape phones (576px and up)*/
