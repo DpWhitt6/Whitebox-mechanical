@@ -149,14 +149,22 @@ main {
     padding-left: 10px;
 }
 
+.services {
+    width: 100%;
+    text-align:start;
+    font-size: large;
+    color: #cfcccc;
+    padding: 20px 10px 20px 10px;
+    background-color: #48688d;
+    opacity: .9;
+}
 
-
-#services {
+/*#services {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, auto);
     /*stackoverflow https://stackoverflow.com/questions/8184958/add-space-between-html-elements-only-using-css*/
-    grid-gap: 20px;
+    /*grid-gap: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -167,9 +175,9 @@ main {
     text-align: center;
     font-size: larger;
     box-sizing: content-box;
-    height: 180px;
-    width: 180px;
-    padding: 30px;
+    /*height: 180px;
+    width: 180px;*/
+    /*padding: 30px;
     border-radius: 25%;
 }
 
@@ -181,10 +189,9 @@ main {
     padding: 20px 10px 20px 10px;
     background-color: #48688d;
     opacity: .9;
-}
+}*/
 
-
-#design {
+/*#design {
     order: 1;
     background-color: #cfcccc;
     border: 2px solid #48688d;
@@ -214,6 +221,117 @@ main {
     color: #cfcccc;
     box-shadow: 5px 5px #cfcccc;
 }
+*/
+
+#services-multi {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, auto);
+    /*stackoverflow https://stackoverflow.com/questions/8184958/add-space-between-html-elements-only-using-css*/
+    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px 70px 25px 70px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 180px;
+    height: 180px;
+    perspective: 1000px;
+    border-radius: 25%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 25%;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 25%;
+    border: 2px solid;
+  }
+  
+  .flip-card-front {
+    padding-top: 25px;
+    background-color: #cfcccc;
+    color: #48688d;
+    border-color: #48688d;
+    box-shadow: 5px 5px #48688d;
+  }
+  
+  .flip-card-back {
+    padding: 25px;
+    background-color: #48688d;
+    color: #cfcccc;
+    transform: rotateY(180deg);
+    border-color: #cfcccc;
+    box-shadow: 5px 5px #cfcccc;
+  }
+
+  .flip-card1 {
+    background-color: transparent;
+    width: 180px;
+    height: 180px;
+    perspective: 1000px;
+    border-radius: 25%;
+  }
+  
+  .flip-card-inner1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 25%;
+  }
+  
+  .flip-card1:hover .flip-card-inner1 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front1, .flip-card-back1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 25%;
+    border: 2px solid;
+  }
+  
+  .flip-card-front1 {
+    padding-top: 25px;
+    background-color: #48688d;
+    color: #cfcccc;
+    border-color: #cfcccc;
+    box-shadow: 5px 5px #cfcccc;
+  }
+  
+  .flip-card-back1 {
+    padding: 25px;
+    background-color: #cfcccc;
+    color: #48688d;
+    transform: rotateY(180deg);
+    border-color: #48688d;
+    box-shadow: 5px 5px #48688d;
+  }
 
 footer {
     background-color: #48688d;
