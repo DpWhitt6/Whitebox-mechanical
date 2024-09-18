@@ -120,7 +120,7 @@ main {
     /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
-    background: scroll;
+    background: fixed;
     background-image: url("../images/IMG_4273.jpg");
     background-position: center;
     background-repeat: no-repeat;
