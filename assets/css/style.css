@@ -103,9 +103,6 @@ nav {
     box-shadow: 0 2px 2px#48688d;
     display: none;
     top: 100%;
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
-
 }
 
 /* Nav toggle */
@@ -149,15 +146,16 @@ main {
     background-color: #cfcccc;
     opacity: 0.8;
     position: absolute;
-    bottom: 15px;
+    bottom: 50px;
     width: 100%;
-    min-height: 170px;
+    min-height: 200px;
     padding-top: 40px;
     padding-left: 10px;
 }
 #cover-text h1{
     font-size: 200%;
 }
+
 
 .services {
     width: 100%;
@@ -284,13 +282,12 @@ main {
 footer {
     background-color: #48688d;
     z-index: 99;
-    
 }
 
 #address {
     color: #cfcccc;
-    width: 35%;
-    padding-left: 15px;
+    width: 100%;
+    text-align: center;
 }
 
 /*media query: large or landscape phones (576px and up)*/
@@ -303,7 +300,6 @@ footer {
 
     main{
         background-size: 125vh;
-        background-position: bottom;
     }
     #cover-text h1{
         font-size: 250%;
@@ -327,18 +323,26 @@ footer {
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
 
-
+    main{
+        background-size: 175vh;
+        background-position: 100% 0px 200px 200px;
+        min-height: 900px;
+    }
 
     #cover-text h1{
         font-size: 350%;
     }
-}
+    #services-multi {
+        padding-top: 50px;
+    }
 
+
+}
 @media screen and (min-width: 1200px) {
 
    
     main{
-        background-size: 180vh;
+        background-size: 190vh;
     }
     #cover-text h1{
         font-size: 400%;
