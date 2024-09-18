@@ -31,7 +31,7 @@ h3 {
     font-size: large;
 }
 
-p{
+p {
     font-size: medium;
 }
 
@@ -95,7 +95,7 @@ header a {
 
 /* Navbar styles with dropdown toggle */
 nav {
-      position: absolute;
+    position: absolute;
     background-color: #cfcccc;
     width: 100%;
     left: 0px;
@@ -122,10 +122,13 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     /* Enable flex properties for child elements */
+}
+
+#background{
     display: flex;
     flex-direction: column;
     background: fixed;
-    background-image: url("../images/units\ being\ placed\ altered.jpg");
+    background-image: url("../images/units-being-placed-altered.jpg");
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -138,7 +141,7 @@ main {
     height: 450px;
     width: 100%;
     position: relative;
-    
+
 }
 
 #cover-text {
@@ -152,14 +155,15 @@ main {
     padding-top: 40px;
     padding-left: 10px;
 }
-#cover-text h1{
+
+#cover-text h1 {
     font-size: 200%;
 }
 
 
 .services {
     width: 100%;
-    text-align:start;
+    text-align: start;
     color: #cfcccc;
     padding: 20px 10px 20px 10px;
     background-color: #48688d;
@@ -185,9 +189,9 @@ main {
     height: 190px;
     perspective: 1000px;
     border-radius: 25%;
-  }
-  
-  .flip-card-inner {
+}
+
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -195,13 +199,14 @@ main {
     transition: transform 0.6s;
     transform-style: preserve-3d;
     border-radius: 25%;
-  }
-  
-  .flip-card:hover .flip-card-inner {
+}
+
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
+}
+
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -209,35 +214,35 @@ main {
     backface-visibility: hidden;
     border-radius: 25%;
     border: 2px solid;
-  }
-  
-  .flip-card-front {
+}
+
+.flip-card-front {
     padding-top: 50px;
     background-color: #cfcccc;
     color: #48688d;
     border-color: #48688d;
     box-shadow: 5px 5px #48688d;
     opacity: .85;
-  }
-  
-  .flip-card-back {
+}
+
+.flip-card-back {
     padding: 25px;
     background-color: #48688d;
     color: #cfcccc;
     transform: rotateY(180deg);
     border-color: #cfcccc;
     box-shadow: 5px 5px #cfcccc;
-  }
+}
 
-  .flip-card1 {
+.flip-card1 {
     background-color: transparent;
     width: 190px;
     height: 190px;
     perspective: 1000px;
     border-radius: 25%;
-  }
-  
-  .flip-card-inner1 {
+}
+
+.flip-card-inner1 {
     position: relative;
     width: 100%;
     height: 100%;
@@ -245,13 +250,14 @@ main {
     transition: transform 0.6s;
     transform-style: preserve-3d;
     border-radius: 25%;
-  }
-  
-  .flip-card1:hover .flip-card-inner1 {
+}
+
+.flip-card1:hover .flip-card-inner1 {
     transform: rotateY(180deg);
-  }
-  
-  .flip-card-front1, .flip-card-back1 {
+}
+
+.flip-card-front1,
+.flip-card-back1 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -259,25 +265,39 @@ main {
     backface-visibility: hidden;
     border-radius: 25%;
     border: 2px solid;
-  }
-  
-  .flip-card-front1 {
+}
+
+.flip-card-front1 {
     padding-top: 50px;
     background-color: #48688d;
     color: #cfcccc;
     border-color: #cfcccc;
     box-shadow: 5px 5px #cfcccc;
     opacity: .85;
-  }
-  
-  .flip-card-back1 {
+}
+
+.flip-card-back1 {
     padding: 25px;
     background-color: #cfcccc;
     color: #48688d;
     transform: rotateY(180deg);
     border-color: #48688d;
     box-shadow: 5px 5px #48688d;
-  }
+}
+
+/*About us*/
+#photos {
+    min-height: 1500px;
+    width: 100%;
+}
+
+.photo1 {
+    background-image: url("../images/Crane-lift-supervised-altered.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+
 
 footer {
     background-color: #48688d;
@@ -298,10 +318,11 @@ footer {
         font-size: 150%;
     }
 
-    main{
+    #background {
         background-size: 125vh;
     }
-    #cover-text h1{
+
+    #cover-text h1 {
         font-size: 250%;
     }
 }
@@ -310,11 +331,11 @@ footer {
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
-    #cover-text h1{
+    #cover-text h1 {
         font-size: 300%;
     }
 
-    main{
+    #background {
         background-size: 150vh;
     }
 
@@ -323,28 +344,31 @@ footer {
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
 
-    main{
+    #background {
         background-size: 175vh;
         background-position: 100% 0px 200px 200px;
         min-height: 900px;
     }
 
-    #cover-text h1{
+    #cover-text h1 {
         font-size: 350%;
     }
+
     #services-multi {
         padding-top: 50px;
     }
 
 
 }
+
 @media screen and (min-width: 1200px) {
 
-   
-    main{
+
+    #background {
         background-size: 190vh;
     }
-    #cover-text h1{
+
+    #cover-text h1 {
         font-size: 400%;
     }
 }
