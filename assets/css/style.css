@@ -121,14 +121,15 @@ nav {
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    width: 100%;
     /* Enable flex properties for child elements */
 }
 
-#background{
+#background-index{
     display: flex;
     flex-direction: column;
     background: fixed;
-    background-image: url("../images/units-being-placed-altered.jpg");
+    background-image: url("../images/Crane-lift-supervised-altered-3.jpg");
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -140,8 +141,7 @@ main {
 #hero {
     height: 450px;
     width: 100%;
-    position: relative;
-
+    position: rel
 }
 
 #cover-text {
@@ -285,30 +285,7 @@ main {
     box-shadow: 5px 5px #48688d;
 }
 
-/*About us*/
-#photos {
-    min-height: 1500px;
-    width: 100%;
-}
 
-.photo1 {
-    background-image: url("../images/Crane-lift-supervised-altered.jpg");
-    background-position: top right;
-    background-repeat: no-repeat;
-    padding-top: 100px;
-}
-
-
-footer {
-    background-color: #48688d;
-    z-index: 99;
-}
-
-#address {
-    color: #cfcccc;
-    width: 100%;
-    text-align: center;
-}
 
 /*media query: large or landscape phones (576px and up)*/
 @media screen and (min-width: 576px) {
@@ -318,8 +295,9 @@ footer {
         font-size: 150%;
     }
 
-    #background {
-        background-size: 125vh;
+    #background-index {
+        background-size: 130vw 130vh;
+        bottom: 50px;
     }
 
     #cover-text h1 {
@@ -335,8 +313,8 @@ footer {
         font-size: 300%;
     }
 
-    #background {
-        background-size: 150vh;
+    #background-index {
+        background-size: 100vw 100vh ;
     }
 
 }
@@ -344,9 +322,8 @@ footer {
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
 
-    #background {
-        background-size: 175vh;
-        background-position: 100% 0px 200px 200px;
+    #background-index {
+        background-size: 100vw;
         min-height: 900px;
     }
 
@@ -364,8 +341,8 @@ footer {
 @media screen and (min-width: 1200px) {
 
 
-    #background {
-        background-size: 190vh;
+    #background-index {
+        background-size: 100vw;
     }
 
     #cover-text h1 {
